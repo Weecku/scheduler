@@ -39,9 +39,10 @@ public class Main {
 		
 		//    book = new Booking(fileContent);
 		    
-		    for(int i = 1; i<fileContent.Length; i++)
+		    for(int i = 1; i<fileContent.size(); i++)
 	        {
 	        	book = new Booking();
+	        	String current = fileContent.get(i);
 	        	book.bookDate = fileContent.get(i);
 	        	
 	        	//if(empID.set)
